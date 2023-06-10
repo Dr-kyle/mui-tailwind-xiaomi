@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('/public/fonts/MiSans-Bold.ttf'); */
+
+@font-face {
+  font-family: "MiSans-Normal";
+  src: url('/fonts/MiSans-Normal.ttf');
+}
+
+@font-face {
+  font-family: "MiSans-Demibold";
+  src: url('/fonts/MiSans-Demibold.ttf');
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* font-family: MiSans-Normal; */
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
