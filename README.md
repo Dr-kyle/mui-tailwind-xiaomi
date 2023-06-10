@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+[material-tailwind](https://www.material-tailwind.com/)
+[ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)
+
 ## Getting Started
 
 First, run the development server:

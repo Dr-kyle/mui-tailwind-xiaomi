@@ -17,14 +17,14 @@ import Content from '@/components/Content'
 export default function RootLayout(props) {
   return (
     <html lang="en">
-      <body className='font-misans '>
+      <body className='font-misans'>
         <div className='text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900'>
-          <div className='max-w-7xl min-h-screen mx-auto'>
-            <div className='flex flex-col'>
+          <div className='max-w-7xl mx-auto'>
+            <div className='min-h-screen flex flex-col'>
               <div className=''>
                 <Header></Header>
               </div>
-              <div className=''>
+              <div className='grow'>
                 <Content>{props.children}</Content>
               </div>
               <div>

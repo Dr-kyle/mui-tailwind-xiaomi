@@ -1,5 +1,5 @@
 export default function Footer() {
   return (
-    <div>footer</div>
+    <div className="w-full">footer</div>
   )
 }
