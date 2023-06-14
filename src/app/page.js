@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Menu,
   MenuHandler,
@@ -7,7 +5,8 @@ import {
   MenuItem,
   Avatar,
   Typography,
-} from "@material-tailwind/react";
+} from "@/components/mui";
+
 import {
   Cog6ToothIcon,
   PowerIcon,

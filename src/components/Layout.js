@@ -5,19 +5,11 @@ import Footer from '@/components/Footer'
 import Content from '@/components/Content'
 import React from 'react';
 
-import { getUserInfo } from '@/service'
+// import { getUserInfo } from '@/service'
 
 //text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900
 
 export default async function Layout(props) {
-
-  // const res = await getUserInfo()
-
-  // useEffect(() => {
-  //   getUserInfo()
-  //   console.log('Layout')
-  // }, [])
-  
 
   return (
 
