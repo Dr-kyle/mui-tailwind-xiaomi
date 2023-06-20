@@ -2,7 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 [material-tailwind](https://www.material-tailwind.com/)
 [ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)
-[nookies](https://github.com/maticzav/nookies)
+[js-cookie](https://github.com/js-cookie/js-cookie)
+[yup](https://github.com/jquense/yup)
+[prisma](https://www.prisma.io/docs/getting-started/quickstart)
 
 ## Getting Started
 
