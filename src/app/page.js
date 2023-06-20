@@ -16,8 +16,17 @@ import {
 } from "@heroicons/react/24/outline";
 
 import Layout from "@/components/Layout";
+import { cookies } from 'next/headers'
+import Dashboard from "@/components/Dashboard";
+import { getAppList } from "@/service/backendService";
 
-export default function Home() {
+
+export default async function Home() {
+
+  const cookieStore = cookies()
+
+  const appList = await getAppList()
+
   return (
     <Layout>
       <div className="flex flex-col items-center justify-between p-24">
@@ -71,6 +80,24 @@ export default function Home() {
         </MenuList>
       </Menu>
         </div>
+      </div>
+      <div>
+        {cookieStore.getAll().map((cookie) => (
+          <div key={cookie.name}>
+            <p>Name: {cookie.name}</p>
+            <p>Value: {cookie.value}</p>
+          </div>
+        ))}
+      </div>
+      <div>
+        {appList.data.map(i => (
+          <div key={i}>
+            <p>Name: {i}</p>
+          </div>
+        ))}
+      </div>
+      <div>
+        <Dashboard></Dashboard>
       </div>
     </Layout>
   )

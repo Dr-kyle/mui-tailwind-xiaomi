@@ -11,12 +11,12 @@ import './globals.css'
 
 //text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900
 
-export default async function RootLayout(props) {
+export default async function RootLayout({children}) {
 
   return (
     <html lang="en">
       <body className='font-misans'>
-        {props.children}
+        {children}
       </body>
     </html>
   )

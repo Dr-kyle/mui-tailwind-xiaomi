@@ -5,14 +5,12 @@ import Footer from '@/components/Footer'
 import Content from '@/components/Content'
 import React from 'react';
 
-// import { getUserInfo } from '@/service'
 
 //text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900
 
-export default async function Layout(props) {
+export default function Layout(props) {
 
   return (
-
         <div className='text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900'>
           <div className='max-w-7xl mx-auto'>
             <div className='min-h-screen flex flex-col'>
@@ -27,7 +25,6 @@ export default async function Layout(props) {
               </div>
             </div>
           </div>
-          
         </div>
   )
 }

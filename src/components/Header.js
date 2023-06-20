@@ -5,25 +5,19 @@
 //     <div> header</div>
 //   )
 // }
-
-
-
 import {
   Navbar,
   Typography
 } from "@/components/mui";
+// import {
+//   Navbar,
+//   Typography
+// } from "@material-tailwind/react"
 
-import { getUserInfo } from '@/service'
 
-
-import ProfileMenu from "./Avatar";
+import Avatar from "@/components/Avatar";
  
 export default async function Header() {
-
-  const res = await getUserInfo()
-  // React.useEffect(() => {
-  //   console.log('header init')
-  // }, [])
   
   return (
     <Navbar className="mt-2 p-2 rounded-none shadow-sm">
@@ -35,7 +29,7 @@ export default async function Header() {
         >
           GPT
         </Typography>
-        <ProfileMenu res={res}/>
+        <Avatar />
       </div>
     </Navbar>
   );
