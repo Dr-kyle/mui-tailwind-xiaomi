@@ -34,8 +34,6 @@ export default function Login() {
         <p>Login</p>
         <div>
           <form onSubmit={handleSubmit(onSubmit)}>
-
-
             <div className="grid grid-cols-1 gap-2 md:gap-4">
               <div className="flex flex-col gap-1">
                 <label className="">Username</label>

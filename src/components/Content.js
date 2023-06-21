@@ -3,6 +3,6 @@ export default function Content({children}) {
 
 
   return (
-    <div>{children}</div> 
+    <div className="p-2 md:p-4">{children}</div> 
   )
 }

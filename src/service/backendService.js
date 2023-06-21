@@ -23,3 +23,7 @@ export function getAppList() {
   console.log('getAppList')
   return backRequest.get('/api/app')
 }
+
+export function verifyToken(token) {
+  return backRequest.get('/api/token')
+}

@@ -12,7 +12,7 @@ export default function Layout(props) {
 
   return (
         <div className='text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900'>
-          <div className='max-w-7xl mx-auto'>
+          <div className='mx-auto'>
             <div className='min-h-screen flex flex-col'>
               <div className=''>
                 <Header></Header>
